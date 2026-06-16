@@ -10,7 +10,7 @@ public sealed class DiffService
     public ChangeReport Compare(IReadOnlyCollection<FtmEntity> current, IReadOnlyCollection<FtmEntity> previous)
     {
         var report = new ChangeReport();
-        var previousHashes = previous.ToDictionary(e => e.Id, ComputeSignature, StringComparer.OrdinalIgnoreCase);
+        var previousHashes = BuildPreviousHashMap(previous);
 
         foreach (var entity in current)
         {
@@ -30,6 +30,17 @@ public sealed class DiffService
         }
 
         return report;
+    }
+
+    private static Dictionary<string, string> BuildPreviousHashMap(IEnumerable<FtmEntity> entities)
+    {
+        var map = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var entity in entities)
+        {
+            map[entity.Id] = ComputeSignature(entity);
+        }
+
+        return map;
     }
 
     private static string ComputeSignature(FtmEntity entity)

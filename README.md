@@ -6,6 +6,6 @@ Based on the sample https://github.com/krzyhook/angular-adal-example, I created 
 
 ## World-Check FtM converter artifacts
 
-- Design document: `/home/runner/work/ionic-adal-example/ionic-adal-example/akiimalam/ionic-adal-example/docs/worldcheck-ftm-converter-design.md`
-- .NET 10 project: `/home/runner/work/ionic-adal-example/ionic-adal-example/akiimalam/ionic-adal-example/dotnet/net10`
-- .NET 6 project: `/home/runner/work/ionic-adal-example/ionic-adal-example/akiimalam/ionic-adal-example/dotnet/net6`
+- Design document: `docs/worldcheck-ftm-converter-design.md`
+- .NET 10 project: `dotnet/net10`
+- .NET 6 project: `dotnet/net6`

@@ -3,13 +3,13 @@
 ## Build
 
 ```bash
-dotnet build /home/runner/work/ionic-adal-example/ionic-adal-example/akiimalam/ionic-adal-example/dotnet/net6/WorldCheckFtm.Net6.slnx
+dotnet build dotnet/net6/WorldCheckFtm.Net6.slnx
 ```
 
 ## Test
 
 ```bash
-dotnet test /home/runner/work/ionic-adal-example/ionic-adal-example/akiimalam/ionic-adal-example/dotnet/net6/WorldCheckFtm.Net6.slnx
+dotnet test dotnet/net6/WorldCheckFtm.Net6.slnx
 ```
 
 ## Run
