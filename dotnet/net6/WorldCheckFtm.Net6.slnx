@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="WorldCheckFtm.Cli.Tests/WorldCheckFtm.Cli.Tests.csproj" />
+  <Project Path="WorldCheckFtm.Cli/WorldCheckFtm.Cli.csproj" />
+</Solution>
